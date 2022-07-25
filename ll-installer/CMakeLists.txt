@@ -5,13 +5,10 @@ add_definitions("-DQT_MESSAGELOGCONTEXT")
 find_package(PkgConfig REQUIRED)
 find_package(Qt5Core REQUIRED)
 find_package(Qt5DBus REQUIRED)
-find_package(DtkCore REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
-set(DTK_LIBS dtkcore)
 set(LINK_LIBS
     ${Qt_LIBS}
-    ${DTK_LIBS}
     stdc++)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)

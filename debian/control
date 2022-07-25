@@ -8,7 +8,7 @@ Build-Depends:
  pkg-config,
  qt5-qmake,
  qtbase5-dev,
- libdtkcore-dev
+ xdg-utils
 Standards-Version: 4.1.3
 Homepage: https://www.deepin.org
 
