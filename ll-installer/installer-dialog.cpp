@@ -67,6 +67,10 @@ InstallerDialog::InstallerDialog(QWidget *parent)
     d->logLabel = new QPlainTextEdit("");
     l->addWidget(d->logLabel);
 
+    if (!d->logLabel->isReadOnly()) {
+        d->logLabel->setReadOnly(true);
+    }
+
     l->setStretchFactor(d->logLabel, 100);
 
     setCentralWidget(w);
@@ -91,7 +95,12 @@ void InstallerDialog::install(const QString &appID)
 
     d->og.connect(&d->og, &QProcess::readyReadStandardOutput, [=]() {
         qCritical() << "readyReadStandardOutput";
-        d->logLabel->appendPlainText(QString::fromLocal8Bit(d->og.readAllStandardOutput()));
+        QString content = QString::fromLocal8Bit(d->og.readAllStandardOutput());
+        content = content.replace("\033[?25l", "");
+        content = content.replace("\033[?25h", "");
+        content = content.replace("\r\33[K", "");
+        content = content.replace("\n", "");
+        d->logLabel->appendPlainText(content);
         d->logLabel->verticalScrollBar()->setValue(d->logLabel->verticalScrollBar()->maximum());
     });
 
