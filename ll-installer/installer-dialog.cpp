@@ -1,22 +1,18 @@
 /*
- * Copyright (c) 2021 Uniontech Software Ltd. All rights reserved.
+ * SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.
  *
- * Author:     Iceyer <me@iceyer.net>
- *
- * Maintainer: Iceyer <me@iceyer.net>
- *
- * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-License-Identifier: LGPL-3.0-or-later
  */
 
 #include "installer-dialog.h"
 
+#include <QBoxLayout>
+#include <QDebug>
 #include <QLabel>
 #include <QPlainTextEdit>
-#include <QBoxLayout>
 #include <QProcess>
-#include <QScrollBar>
 #include <QPushButton>
-#include <QDebug>
+#include <QScrollBar>
 
 namespace linglong {
 namespace installer {
