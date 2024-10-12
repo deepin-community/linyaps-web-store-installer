@@ -1,19 +1,19 @@
-# Linglong-store
+# linyaps-web-store-installer
 
-玲珑网页版安装器（Linglong-store）is a package installer of deepin web store.
+`linyaps-web-store-installer` is a package installer for the [Linyaps Web store](https://store.linyaps.org.cn/).
 
 ## Getting help
 
-Any usage issues can ask for help via
+If you ran into any issue, please reach out via the following channels:
 
 - [Gitter](https://gitter.im/orgs/linuxdeepin/rooms)
 - [IRC channel](https://webchat.freenode.net/?channels=deepin)
 - [Forum](https://bbs.deepin.org)
-- [WiKi](https://wiki.deepin.org/)
+- [Wiki](https://wiki.deepin.org/)
 
 ## Getting involved
 
-We encourage you to report issues and contribute changes
+We welcome your contribution and bug reports:
 
 - [Contribution guide for developers](https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers-en) (English)
 - [开发者代码贡献指南](https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers) (Chinese)
